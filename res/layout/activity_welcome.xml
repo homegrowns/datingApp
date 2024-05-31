@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    android:background="@color/backgroungColor"
+    tools:context=".welcome">
+
+    <ProgressBar
+        android:id="@+id/progressBarWelcome"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="100"/>
+
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="친절 가장 기본적인 예의"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_emailcheck"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="환영합니다! 저희와함께 새로운 인연을 만들어보세요."
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="honey bee의 안전과 포용성을 유지하고 강화해나갈 수 있도록 이용 동안 저희의 가이드라인을 준수해주세요."
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+
+    <Button
+        android:id="@+id/btn_skip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="완료"
+        android:layout_gravity="center_horizontal"
+        app:backgroundTint="@color/teal_700"
+        />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

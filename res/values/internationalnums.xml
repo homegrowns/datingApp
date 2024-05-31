@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="resources이름">
+        <item>대한민국 +82</item>
+        <item>싱가포르 +65</item>
+        <item>대만 +886</item>
+        <item>중국 +86</item>
+        <item>태국 +66</item>
+        <item>필리핀 +63</item>
+        <item>인도 +91</item>
+        <item>일본 +81</item>
+        <item>독일 +49</item>
+        <item>홍콩 +852</item>
+        <item>몽골 +976</item>
+        <item>베트남 +84</item>
+        <item>캄보디아 +855</item>
+        <item>미국 +1</item>
+        <item>캐나다 +1</item>
+        <item>멕시코 +52</item>
+        <item>네덜란드 +31</item>
+        <item>러시아 +7</item>
+        <item>스위스 +41</item>
+        <item>영국 +44</item>
+        <item>오스트리아 +43</item>
+        <item>폴란드 +48</item>
+        <item>프랑스 +33</item>
+        <item>그리스 +30</item>
+        <item>헝가리 +36</item>
+        <item>벨기에 +32</item>
+        <item>포르투칼 +351</item>
+        <item>아일랜드 +353</item>
+        <item>아이슬랜드 +354</item>
+        <item>말타 +356</item>
+        <item>핀란드 +358</item>
+        <item>모나코 +377</item>
+        <item>슬로베니아 +386</item>
+        <item>이탈리아 +39</item>
+        <item>덴마크 +45</item>
+        <item>사우디아라비아 +966</item>
+        <item>시리아 +963</item>
+        <item>오만 +968</item>
+        <item>요르단 +962</item>
+        <item>이라크 +964</item>
+        <item>브라질 +55</item>
+    </string-array>
+</resources>

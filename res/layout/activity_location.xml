@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    android:background="@color/backgroungColor"
+    tools:context=".location">
+
+    <ProgressBar
+        android:id="@+id/progressBarLo"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="85"/>
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="위치 서비스를 활성화하세요,"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="위치 서비스를 사용하여 주변의 매력적인
+회원들을 확인해보세요."
+        android:textAlignment="center"
+        android:textColor="#777777"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_emailcheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+
+
+
+        <Button
+            android:id="@+id/btn_activateLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="다음"
+            app:backgroundTint="@color/teal_700"
+            />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/backgroungColor"
+    tools:context=".PhonAuth">
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_baseline_smartphone_24" />
+
+<!-- 전화번호입력하여 다음엑티비티에서 인증번호를 받고 로그인하거나 이미등록되어 있다면 회원가입 진행한다.    -->
+
+    <LinearLayout
+        android:id="@+id/phoneLi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:orientation="vertical">
+
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Phone Number"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전화번호입력"
+        android:textAlignment="center"
+        android:textColor="#777777"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25sp"
+    android:padding="@dimen/_5dp"
+    android:orientation="horizontal">
+
+<!--   <androidx.appcompat.widget.AppCompatSpinner-->
+<!--       android:id="@+id/spinner_internums"-->
+<!--       android:layout_width="wrap_content"-->
+<!--       android:layout_height="35sp"-->
+<!--       android:spinnerMode="dropdown"-->
+<!--       />-->
+
+    <TextView
+        android:id="@+id/tv_selectNation"
+        android:layout_width="130sp"
+        android:layout_height="35sp"
+        android:padding="5sp"
+        android:layout_marginLeft="5sp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textSize="20sp"
+        android:text="대한민국 +82 "
+        />
+
+    <EditText
+        android:id="@+id/et_PhoneNumber"
+        android:layout_width="230sp"
+        android:layout_height="35sp"
+        android:layout_marginLeft="15sp"
+        android:background="#fff"
+        android:inputType="phone"
+        android:textColor="#000"
+        android:textColorHint="#c5c5c5"
+        />
+
+</LinearLayout>
+    <Button
+        android:id="@+id/btn_Countinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:text="계속"
+        app:backgroundTint="@color/teal_700"
+        />
+
+ </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/codeLi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="인증번호"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/CodeNumberDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="인증번호입력"
+            android:textAlignment="center"
+            android:textColor="#777777" />
+
+        <EditText
+            android:id="@+id/et_OTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:hint="******"
+            android:inputType="phone"
+            android:visibility="visible"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textColorHint="#c5c5c5" />
+
+        <TextView
+            android:id="@+id/tv_resend"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/otp_resend"
+            android:textAlignment="center"
+            android:visibility="visible"
+            android:textColor="#777777"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_timer"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#777777"
+            android:visibility="gone"
+            android:textSize="15dp" />
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="확인"
+            app:backgroundTint="@color/teal_700" />
+
+        <TextView
+            android:id="@+id/textView_main_result"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

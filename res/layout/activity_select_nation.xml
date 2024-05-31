@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroungColor"
+    tools:context=".SelectNation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/btn_backtoAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_chevron_left_black_24dp"
+        android:backgroundTint="@color/white"/>
+
+    <EditText
+        android:id="@+id/et_searching"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:hint="검색"
+        android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <!-- 리스트뷰, ListView -->
+    <ListView
+        android:id="@+id/listview_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

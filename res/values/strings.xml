@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Honeybee</string>
+    <string name="otp_resend">인증번호 <b>다시받기</b></string>
+    <string name="default_web_client" translatable="false">431229088446-4uj3ij20pqsbfue035704jputcki0mn2.apps.googleusercontent.com</string>
+
+    <!-- Ted Permission -->
+    <string name="permission_1">[설정] > [권한] 에서 권한을 허용할 수 있습니다.</string>
+    <string name="permission_2">사진 및 파일을 저장하기 위하여 접근 권한이 필요합니다.</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

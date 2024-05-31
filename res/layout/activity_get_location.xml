@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroungColor"
+    android:orientation="vertical"
+    tools:context="Profile.getLocation">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/btn_backInlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_chevron_left_black_24dp"
+        android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text=" 도시 수정"
+            android:textSize="33dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:padding="7dp">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:src="@drawable/ic_search"/>-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_findlocation"-->
+<!--        android:layout_width="360dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="@drawable/edittext_rounded_corner_rectangle"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        />-->
+
+<!--    </LinearLayout>-->
+
+
+
+    <LinearLayout
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_signal_wifi_statusbar_4_bar_24"/>
+
+        <TextView
+            android:id="@+id/tv_recentLocation"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="현재위치 근처(클릭)"
+            android:textColor="@color/black"
+            android:textSize="26dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="결과"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_resultLocation"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text=""
+        android:gravity="center"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="26dp" />
+
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_do_not_disturb_24"/>
+
+        <TextView
+            android:id="@+id/tv_cancelLocation"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="거주지역을 표시하지 않습니다.(클릭)"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

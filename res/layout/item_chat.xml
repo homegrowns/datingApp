@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="6dp"
+        android:textSize="12dp"
+        android:text=""
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/layout_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="10dp"
+            android:text="time"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_partner"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/monkey" />
+
+
+        <TextView
+            android:id="@+id/bubble_you_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            />
+
+        <ImageView
+            android:id="@+id/img_tcpGetimgforyou"
+            android:layout_marginLeft="@dimen/_5dp"
+            android:layout_width="170dp"
+            android:layout_height="190dp"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/bubble_you_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9dp"
+            android:layout_marginLeft="@dimen/_5dp"
+            android:textColor="@color/black"
+            android:layout_gravity="bottom"
+            android:text="time"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/_5dp"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/bubble_NotSent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_5dp"
+            android:textSize="9dp"
+            android:layout_gravity="bottom"
+            android:textColor="@color/red"
+            android:visibility="gone"
+            android:text="전달되지 않음"/>
+
+        <TextView
+            android:id="@+id/bubble_me_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9dp"
+            android:layout_gravity="bottom"
+            android:textColor="@color/black"
+            android:text="time"/>
+
+        <ImageView
+            android:id="@+id/img_tcpGetforme"
+            android:layout_width="170dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="@dimen/_5dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/bubble_me_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            />
+
+
+
+    </LinearLayout>
+
+//////////////////////////
+<!--    <TextView-->
+<!--        android:id="@+id/tv_today"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:textSize="12dp"-->
+<!--        android:text="오늘"-->
+<!--        />-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/layout_time"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:visibility="gone"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_day"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textSize="10dp"-->
+<!--            android:text="time"-->
+<!--            />-->
+
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/layout_imgforyou"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="5dp"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:id="@+id/img_partnerforimg"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:src="@drawable/monkey" />-->
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/img_tcpGetimgforyou"-->
+<!--            android:layout_marginLeft="@dimen/_5dp"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="120dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/bubble_you_timeforimg"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/_5dp"-->
+<!--            android:textSize="9dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:text="time"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/layout_you"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="5dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:id="@+id/img_partner"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:src="@drawable/monkey" />-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/bubble_you_text"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="7dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="asdsssss"/>-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/bubble_you_time"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="9dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:text="time"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/layout_imgforme"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:padding="5dp"-->
+<!--        android:visibility="gone"-->
+<!--        android:gravity="end">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/bubble_me_timeforimg"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="9dp"-->
+<!--            android:layout_marginRight="@dimen/_5dp"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="time"/>-->
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/img_tcpGetforme"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="120dp"-->
+<!--            />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/layout_me"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="5dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginBottom="@dimen/_5dp"-->
+<!--        android:gravity="end">-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/bubble_me_time"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="9dp"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="time"/>-->
+
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/bubble_me_text"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="asasa"-->
+<!--            />-->
+
+
+
+<!--    </LinearLayout>-->
+
+
+    //////////////////////////
+</LinearLayout>

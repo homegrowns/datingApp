@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Profile.SetImage">
+
+    <Button
+        android:layout_marginTop="280dp"
+        android:id="@+id/camerapopBtn"
+        android:layout_width="match_parent"
+        android:text="사진"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/gallerypopBtn"
+        android:layout_width="match_parent"
+        android:text="갤러리"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/ClosepopBtn"
+        android:layout_width="match_parent"
+        android:text="돌아가기"
+        android:layout_height="50dp"/>
+
+</LinearLayout>

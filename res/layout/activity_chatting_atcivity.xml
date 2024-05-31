@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="CouplesAndchat.chattingAtcivity">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/conslayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="top"-->
+<!--        android:background="@drawable/white_grey_border_bottom"-->
+<!--        android:visibility="visible"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_back1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:src="@drawable/ic_chevron_left_black_24dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:id="@+id/img_go_loverprofile"-->
+<!--            android:layout_width="45dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:src="@drawable/monkey"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/btn_back1"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_lover"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_marginLeft="7dp"-->
+<!--            android:text="sdsd"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="25dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/img_go_loverprofile" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_MatchingCancel"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="190dp"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:src="@drawable/ic_settings" />-->
+
+<!--    </LinearLayout>-->
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/conslayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="top"-->
+<!--        android:background="@drawable/white_grey_border_bottom"-->
+<!--        android:visibility="visible"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_back1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:src="@drawable/ic_chevron_left_black_24dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:id="@+id/img_go_loverprofile"-->
+<!--            android:layout_width="45dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:src="@drawable/monkey"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/btn_back1"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_lover"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_marginLeft="7dp"-->
+<!--            android:text="sdsd"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="25dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/img_go_loverprofile" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_MatchingCancel"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:src="@drawable/ic_settings"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <FrameLayout
+        android:id="@+id/img_frame"
+        android:layout_width="match_parent"
+        android:layout_height="670dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/display_view"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="대화종료"
+                android:textColor="@color/black"
+                android:textSize="34dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="아쉽게도 매치가 취소됬습니다..."
+                android:textColor="@color/black"
+                android:textSize="23dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_msgforwoman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="140dp"
+            android:text=" 메세지를 보내서 대화를 시작하세요."
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_msgforman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="140dp"
+            android:text=" 상대 여성의 메세지를 기다려주세요.."
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:visibility="gone" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_lover"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:src="@drawable/monkey"
+            app:civ_border_width="1dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_chatroom"
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="80sp"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:padding="@dimen/_5dp"
+            android:paddingBottom="20dp"
+            android:transcriptMode="alwaysScroll" />
+
+    </FrameLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/RelativeLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/img_frame">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/conslayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_gravity="top"-->
+<!--            android:layout_marginStart="0dp"-->
+<!--            android:layout_marginEnd="0dp"-->
+<!--            android:background="@drawable/white_grey_border_bottom"-->
+<!--            android:visibility="visible"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent">-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/btn_back1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                android:src="@drawable/ic_chevron_left_black_24dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/img_go_loverprofile"-->
+<!--                android:layout_width="45dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:src="@drawable/monkey"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/btn_back1"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_lover"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_marginLeft="7dp"-->
+<!--                android:text="sdsd"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="25dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/img_go_loverprofile" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/btn_MatchingCancel"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                android:src="@drawable/ic_settings"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+<!--    </RelativeLayout>-->
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/layout_chattop" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/imgbtn_file"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:paddingBottom="17dp"
+            android:layout_marginRight="@dimen/_5dp"
+            android:src="@drawable/ic_baseline_drive_file_move_24" />
+
+
+        <Utills.MyEditText
+            android:id="@+id/et_msg"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:textSize="18dp"
+            android:background="@color/gray"
+            android:textColor="@color/black"
+            android:inputType="text"
+            />
+
+
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp"
+            android:text="전송" />
+
+    </LinearLayout>
+<!--    <ListView-->
+<!--        android:id="@+id/listview_chat"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="590dp"-->
+<!--        android:divider="@null"-->
+<!--        android:dividerHeight="0dp"-->
+<!--        android:padding="@dimen/_5dp"-->
+<!--        android:stackFromBottom="true"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/conslayout" />-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

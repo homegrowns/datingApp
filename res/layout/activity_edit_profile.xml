@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroungColor"
+    android:orientation="vertical">
+
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_chevron_left_black_24dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/backgroungColor"
+                android:orientation="vertical">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"/>
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:background="@color/backgroungColor"-->
+<!--                                    android:orientation="vertical"-->
+<!--                                    android:visibility="visible">-->
+
+<!--                <com.jmedeisis.draglinearlayout.DragLinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:id="@+id/container"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    >-->
+
+<!--&lt;!&ndash;                <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:background="@color/backgroungColor"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:orientation="vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:visibility="visible">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:orientation="horizontal"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:weightSum="10">&ndash;&gt;-->
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="130dp"-->
+<!--                            android:layout_height="130dp"-->
+<!--                            app:cardCornerRadius="4dp"-->
+<!--                            app:cardElevation="4dp"-->
+<!--                            app:cardUseCompatPadding="true">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent">-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_centerInParent="true"-->
+<!--                                    android:text="1"-->
+<!--                                    android:textSize="60dp"-->
+<!--                                    android:textStyle="bold" />-->
+
+<!--                                <ImageView-->
+<!--                                    android:id="@+id/image_view_1"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:scaleType="fitXY" />-->
+
+<!--                                <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_alignParentRight="true"-->
+<!--                                    android:layout_alignParentBottom="true"-->
+<!--                                    android:elevation="@dimen/_5dp">-->
+
+<!--                                    <Button-->
+<!--                                        android:id="@+id/btn_add1"-->
+<!--                                        android:layout_width="30dp"-->
+<!--                                        android:layout_height="30dp"-->
+<!--                                        android:background="@drawable/ic_add_circle_black_24dp"-->
+<!--                                        android:elevation="@dimen/_5dp"-->
+<!--                                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                                        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                                    <Button-->
+<!--                                        android:id="@+id/btn_cancel1"-->
+<!--                                        android:layout_width="30dp"-->
+<!--                                        android:layout_height="30dp"-->
+<!--                                        android:background="@drawable/ic_close_black_24dp"-->
+<!--                                        android:elevation="@dimen/_5dp"-->
+<!--                                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                                        app:layout_constraintTop_toTopOf="@+id/btn_add1" />-->
+
+<!--                                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--                            </RelativeLayout>-->
+
+<!--                        </androidx.cardview.widget.CardView>-->
+
+<!--&lt;!&ndash;                        <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_weight="6"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:orientation="vertical">&ndash;&gt;-->
+
+<!--                            <androidx.cardview.widget.CardView-->
+<!--                                android:layout_width="130dp"-->
+<!--                                android:layout_height="130dp"-->
+<!--                                app:cardCornerRadius="4dp"-->
+<!--                                app:cardElevation="4dp"-->
+<!--                                app:cardUseCompatPadding="true">-->
+
+<!--                                <RelativeLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent">-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_centerInParent="true"-->
+<!--                                        android:text="2"-->
+<!--                                        android:textSize="60dp"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                    <ImageView-->
+<!--                                        android:id="@+id/image_view_2"-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="match_parent"-->
+<!--                                        android:scaleType="fitXY" />-->
+
+<!--                                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_alignParentRight="true"-->
+<!--                                        android:layout_alignParentBottom="true"-->
+<!--                                        android:elevation="@dimen/_5dp">-->
+
+<!--                                        <Button-->
+<!--                                            android:id="@+id/btn_add2"-->
+<!--                                            android:layout_width="30dp"-->
+<!--                                            android:layout_height="30dp"-->
+<!--                                            android:background="@drawable/ic_add_circle_black_24dp"-->
+<!--                                            android:elevation="@dimen/_5dp"-->
+<!--                                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                                            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                                        <Button-->
+<!--                                            android:id="@+id/btn_cancel2"-->
+<!--                                            android:layout_width="30dp"-->
+<!--                                            android:layout_height="30dp"-->
+<!--                                            android:background="@drawable/ic_close_black_24dp"-->
+<!--                                            android:elevation="@dimen/_5dp"-->
+<!--                                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                                            app:layout_constraintTop_toTopOf="@+id/btn_add2" />-->
+
+<!--                                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                                </RelativeLayout>-->
+<!--                            </androidx.cardview.widget.CardView>-->
+
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="130dp"-->
+<!--                        android:layout_height="130dp"-->
+<!--                        app:cardCornerRadius="4dp"-->
+<!--                        app:cardElevation="4dp"-->
+<!--                        app:cardUseCompatPadding="true">-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:text="3"-->
+<!--                                android:textSize="60dp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <ImageView-->
+<!--                                android:id="@+id/image_view_3"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_row="0"-->
+<!--                                android:layout_column="0"-->
+<!--                                android:scaleType="fitXY" />-->
+
+<!--                            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentRight="true"-->
+<!--                                android:layout_alignParentBottom="true"-->
+<!--                                android:elevation="@dimen/_5dp">-->
+
+<!--                                <Button-->
+<!--                                    android:id="@+id/btn_add3"-->
+<!--                                    android:layout_width="30dp"-->
+<!--                                    android:layout_height="30dp"-->
+<!--                                    android:background="@drawable/ic_add_circle_black_24dp"-->
+<!--                                    android:elevation="@dimen/_5dp"-->
+<!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                                <Button-->
+<!--                                    android:id="@+id/btn_cancel3"-->
+<!--                                    android:layout_width="30dp"-->
+<!--                                    android:layout_height="30dp"-->
+<!--                                    android:background="@drawable/ic_close_black_24dp"-->
+<!--                                    android:elevation="@dimen/_5dp"-->
+<!--                                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                                    app:layout_constraintTop_toTopOf="@+id/btn_add3" />-->
+
+<!--                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                        </RelativeLayout>-->
+<!--                    </androidx.cardview.widget.CardView>-->
+
+<!--&lt;!&ndash;                        </LinearLayout>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:weightSum="3">&ndash;&gt;-->
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="130dp"-->
+<!--                            android:layout_height="130dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:elevation="@dimen/_5dp"-->
+<!--                            app:cardCornerRadius="4dp"-->
+<!--                            app:cardUseCompatPadding="true">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent">-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_centerInParent="true"-->
+<!--                                    android:text="4"-->
+<!--                                    android:textSize="60dp"-->
+<!--                                    android:textStyle="bold" />-->
+
+<!--                                <ImageView-->
+<!--                                    android:id="@+id/image_view_4"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:scaleType="fitXY" />-->
+
+<!--                                <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_alignParentRight="true"-->
+<!--                                    android:layout_alignParentBottom="true"-->
+<!--                                    android:elevation="@dimen/_5dp">-->
+
+<!--                                    <Button-->
+<!--                                        android:id="@+id/btn_add4"-->
+<!--                                        android:layout_width="30dp"-->
+<!--                                        android:layout_height="30dp"-->
+<!--                                        android:background="@drawable/ic_add_circle_black_24dp"-->
+<!--                                        android:elevation="@dimen/_5dp"-->
+<!--                                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                                        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                                    <Button-->
+<!--                                        android:id="@+id/btn_cancel4"-->
+<!--                                        android:layout_width="30dp"-->
+<!--                                        android:layout_height="30dp"-->
+<!--                                        android:background="@drawable/ic_close_black_24dp"-->
+<!--                                        android:elevation="@dimen/_5dp"-->
+<!--                                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                                        app:layout_constraintTop_toTopOf="@+id/btn_add4" />-->
+
+<!--                                </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                            </RelativeLayout>-->
+<!--                        </androidx.cardview.widget.CardView>-->
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="130dp"-->
+<!--                            android:layout_height="130dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:elevation="@dimen/_5dp"-->
+<!--                            app:cardCornerRadius="4dp"-->
+<!--                            app:cardUseCompatPadding="true">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent">-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/text_view_5"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_centerInParent="true"-->
+<!--                                    android:scaleType="fitXY"-->
+<!--                                    android:text="5"-->
+<!--                                    android:textSize="60dp"-->
+<!--                                    android:textStyle="bold" />-->
+
+<!--                                <ImageView-->
+<!--                                    android:id="@+id/image_view_5"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:scaleType="fitXY" />-->
+
+<!--                                <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_alignParentRight="true"-->
+<!--                                    android:layout_alignParentBottom="true"-->
+<!--                                    android:elevation="@dimen/_5dp">-->
+
+<!--                                    <Button-->
+<!--                                        android:id="@+id/btn_add5"-->
+<!--                                        android:layout_width="30dp"-->
+<!--                                        android:layout_height="30dp"-->
+<!--                                        android:background="@drawable/ic_add_circle_black_24dp"-->
+<!--                                        android:elevation="@dimen/_5dp"-->
+<!--                                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                                        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                                    <Button-->
+<!--                                        android:id="@+id/btn_cancel5"-->
+<!--                                        android:layout_width="30dp"-->
+<!--                                        android:layout_height="30dp"-->
+<!--                                        android:background="@drawable/ic_close_black_24dp"-->
+<!--                                        android:elevation="@dimen/_5dp"-->
+<!--                                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                                        app:layout_constraintTop_toTopOf="@+id/btn_add5" />-->
+
+<!--                                </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                            </RelativeLayout>-->
+<!--                        </androidx.cardview.widget.CardView>-->
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="130dp"-->
+<!--                            android:layout_height="130dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:elevation="@dimen/_5dp"-->
+<!--                            app:cardCornerRadius="4dp"-->
+<!--                            app:cardUseCompatPadding="true">-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent">-->
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_centerInParent="true"-->
+<!--                                    android:text="6"-->
+<!--                                    android:textSize="60dp"-->
+<!--                                    android:textStyle="bold" />-->
+
+<!--                                <ImageView-->
+<!--                                    android:id="@+id/image_view_6"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:scaleType="fitXY" />-->
+
+<!--                                <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_alignParentRight="true"-->
+<!--                                    android:layout_alignParentBottom="true"-->
+<!--                                    android:elevation="@dimen/_5dp">-->
+
+<!--                                    <Button-->
+<!--                                        android:id="@+id/btn_add6"-->
+<!--                                        android:layout_width="30dp"-->
+<!--                                        android:layout_height="30dp"-->
+<!--                                        android:background="@drawable/ic_add_circle_black_24dp"-->
+<!--                                        android:elevation="@dimen/_5dp"-->
+<!--                                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                                        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                                    <Button-->
+<!--                                        android:id="@+id/btn_cancel6"-->
+<!--                                        android:layout_width="30dp"-->
+<!--                                        android:layout_height="30dp"-->
+<!--                                        android:background="@drawable/ic_close_black_24dp"-->
+<!--                                        android:elevation="@dimen/_5dp"-->
+<!--                                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                                        app:layout_constraintTop_toTopOf="@+id/btn_add6" />-->
+
+<!--                                </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                            </RelativeLayout>-->
+<!--                        </androidx.cardview.widget.CardView>-->
+<!--&lt;!&ndash;                    </LinearLayout>&ndash;&gt;-->
+<!--&lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+
+
+<!--                </com.jmedeisis.draglinearlayout.DragLinearLayout>-->
+
+<!--                                </LinearLayout>-->
+
+<!--                </GridLayout>-->
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text=" 자기소개"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/et_myintro"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/edittext_rounded_corner_rectangle"
+                        android:backgroundTint="@color/white"
+                        android:hint="자기소개"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/tv_myintro"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="관심사"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_hobby"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="직함"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_rounded_corner_rectangle"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/black"
+                        android:hint="" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="직장"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_workplace"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_rounded_corner_rectangle"
+                        android:backgroundTint="@color/white"
+                        android:hint=""
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="학교"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_school"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_rounded_corner_rectangle"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/black"
+                        android:hint="" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="거주지역"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_locatin"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:textColor="@color/black"
+                        android:text=" "
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:text="성별"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                    <RadioGroup
+                        android:id="@+id/rg_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rbtn_man"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="남성"
+                            android:textColor="@color/black"
+
+                            />
+
+
+                        <RadioButton
+                            android:id="@+id/rbtn_woman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="여성"
+                            android:textColor="@color/black" />
+
+                    </RadioGroup>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="나이숨기기"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/btn_hideAge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:background="@null"
+                            android:button="@drawable/custom_switch"
+                            android:checked="false"
+                            android:thumb="@null"
+                            app:track="@null" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="거리숨기기"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/btn_hideDistance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:background="@null"
+                            android:button="@drawable/custom_switch"
+                            android:checked="false"
+                            android:thumb="@null"
+                            app:track="@null" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

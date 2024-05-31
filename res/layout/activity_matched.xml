@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="CouplesAndchat.Matched_Activity"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        android:background="@drawable/white_grey_border_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_go_profile"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/monkey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="100dp"
+            android:textSize="35dp"
+            android:textColor="@color/yellow"
+            android:text="Honey"/>
+
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/recycler_newMatch"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="새 매치"-->
+<!--        android:padding="10dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_numOfmatch"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="0"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="23dp" />-->
+
+<!--    </LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/layout_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/img_frame"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4sp"
+            android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgbtn_likesInMatchedA"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_NumOflike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/yellow"
+                android:text="likes"
+                android:textSize="17dp"/>
+
+        </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_searchFormatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="매치 검색"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/layout_NewMatch" />
+
+    <LinearLayout
+        android:id="@+id/layout_NewMatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/img_frame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_edittext">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="새로운 매치"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayoutdown"
+            tools:layout_editor_absoluteX="0dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/img_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/layout_msg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_newMatch"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:overScrollMode="never"
+                    android:layout_height="210dp"
+                    android:padding="10dp" />
+
+                <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_gravity="center" />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_allChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="현재모든 매칭된유저와 채팅중입니다."
+            android:textSize="25dp"
+            android:visibility="gone"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_noMatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="새로운매치가 없습니다."
+            android:textSize="25dp"
+            android:visibility="gone"
+            android:textColor="@color/black"/>
+
+</FrameLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/materialDivider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/img_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="메세지"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayoutdown"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/imgbtn_navi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_chat"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        />
+
+        <ProgressBar
+            android:id="@+id/progress_barDown"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/imgbtn_navi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <include layout="@layout/layout_top_navigation_view" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

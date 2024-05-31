@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3sp">
+
+
+
+    <LinearLayout
+        android:id="@+id/matched_layout"
+        android:layout_width="120dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:elevation="@dimen/_5dp"
+            app:cardCornerRadius="6dp"
+            app:cardUseCompatPadding="true">
+
+
+            <ImageView
+                android:id="@+id/img_couple"
+                android:layout_width="115dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:scaleType="centerCrop" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/couple_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/couple_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/Layout_allChat"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:visibility="gone">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="70sp"-->
+<!--            android:text="현재모든 매칭된유저와 채팅중입니다."-->
+<!--            android:textSize="25dp"-->
+<!--            android:textColor="@color/black"/>-->
+<!--        </LinearLayout>-->
+    </FrameLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
