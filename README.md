@@ -1,3 +1,4 @@
 # datingApp
-서버 스택 = php
-채팅서버 =jsp
+프론트 : java
+서버
+스택 : php,(채팅)jsp 
